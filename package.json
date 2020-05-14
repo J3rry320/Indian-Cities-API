@@ -2,7 +2,9 @@
   "name": "indian-cities-api",
   "version": "2.0.0",
   "description": "Indian Cities API",
-  "main": "server.js",
+  "main": "src/",
+  "repository": "https://github.com/J3rry320/Indian-Cities-API.git",
+  "readme": "README.md",
   "scripts": {
     "start": "node src/",
     "test": "echo will be adding test"
