@@ -10,12 +10,14 @@ module.exports = (req, res, next) => {
     if (queryValue) {
       if (queryValue > 360) {
         res.statusCode = 500;
-        return _send.call(this, "Invalid degree value");
+        return _send.call(this, JSON.stringify("Invalid degree value"));
       } else {
         try {
           return _send.call(
             this,
-            String(JSON.parse(body)[Math.floor(queryValue / 22.5 + 0.5) % 16])
+            JSON.stringify(
+              JSON.parse(body)[Math.floor(queryValue / 22.5 + 0.5) % 16]
+            )
           );
         } catch (error) {
           res.statusCode = 404;
