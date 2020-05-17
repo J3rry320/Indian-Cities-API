@@ -1,12 +1,14 @@
-const states = require("../data/states.json");
-const cities = require("../data/cities.json");
 const fs = require("fs");
-const path = require("path");
+
 const writeFile = () => {
   try {
     fs.writeFileSync(
-      path.join(__dirname, "../db.json"),
-      JSON.stringify({ ...states, ...cities })
+      require("path").join(__dirname, "../db.json"),
+      JSON.stringify({
+        ...require("../data/states.json"),
+        ...require("../data/cities.json"),
+        ...require("../data/windDegree.json"),
+      })
     );
   } catch (error) {
     throw new Error("Cannot write the file", error);

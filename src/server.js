@@ -4,8 +4,9 @@ require("./writeFileUtil").writeDB();
 
 const server = jsonServer.create();
 
-server.use(jsonServer.defaults());
+server.use(jsonServer.defaults(), require("./getWindDegree"));
 server.use(jsonServer.router(path.join(__dirname, "../db.json")));
+
 module.exports = {
   startServer: () => {
     try {
