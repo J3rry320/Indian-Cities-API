@@ -1,0 +1,39 @@
+{
+  "gradients": [
+    {
+      "id": "night-sky",
+      "color": "#00000c"
+    },
+    {
+      "id": "twilight",
+      "color": "to bottom, #020111 60%,#20202c 100%"
+    },
+    {
+      "id": "early-morning",
+      "color": "to bottom, #4a4969 0%,#7072ab 50%,#cd82a0 100%"
+    },
+
+    {
+      "id": "pre-noon",
+      "color": "to bottom, #94c5f8 1%,#a6e6ff 70%,#b1b5ea 100%"
+    },
+
+    {
+      "id": "noon",
+      "color": "to bottom, #9be2fe 0%,#67d1fb 100%"
+    },
+
+    {
+      "id": "afternoon",
+      "color": "to bottom, #2d91c2 0%,#1e528e 100%"
+    },
+    {
+      "id": "sunset",
+      "color": "to bottom, #154277 0%,#576e71 30%,#e1c45e 70%,#b26339 100%"
+    },
+    {
+      "id": "early-evening",
+      "color": "to bottom, #090401 50%,#4B1D06 100%"
+    }
+  ]
+}

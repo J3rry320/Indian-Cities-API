@@ -8,6 +8,7 @@ const writeFile = () => {
         ...require("../data/states.json"),
         ...require("../data/cities.json"),
         ...require("../data/windDegree.json"),
+        ...require("../data/gradients.json"),
       })
     );
   } catch (error) {
